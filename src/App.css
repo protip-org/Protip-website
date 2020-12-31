@@ -31,18 +31,3 @@ button:hover {
   background-color: transparent;
 }   
 
-
-
-@media screen and (max-width: 1600px){
-  body {
-    background-image: url('https://i.imgur.com/OE6pchQ.jpg');
-    background-repeat: no-repeat;
-  }
-}
-
-@media screen and (width: 1920px){
-  body {
-    background-image: url('https://i.imgur.com/IhVODPr.jpg');
-    background-repeat: no-repeat;
-  }
-}

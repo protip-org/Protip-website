@@ -1,21 +1,39 @@
 import React from "react";
-import { CommandsDivContainer, CommandsUl, CommandsLi } from "./style";
+import CommandItem from "../../components/command-item/index";
+import { CommandsDivContainer, CommandsUl } from "./style";
 
-const CommandsPage = () => (
+const CommandsPage = () => {
+    const [data, setData] = React.useState([
+        { command: ".tip - Recive a peice of advice." },
+        { command: ".help - Brings you to this menu." },
+        { command: ".about - Shows details about Protip." },
+        { command: ".source - View the source code." },
+        { command: ".bug - Report a bug/error." },
+        { command: ".suggest - Suggest a feature." },
+        { command: ".invite - Invite Protip to your server." },
+        { command: ".github - View Protip's github repository." },
+        { command: ".website Visit the official Protip website." },
+        { command: ".uptime See how long Protip has been online" },
+        { command: ".set prefix - Set a new prefix for Protip." }
+    ]);
+
+    React.useEffect(() => {
+        document.body.style.backgroundImage = "url('')";
+        document.body.style.backgroundColor = "#2f303f";
+      }, []);
+
+return (
         <CommandsDivContainer>
             <CommandsUl>
-                <CommandsLi>.tip - Recive a peice of advice.</CommandsLi>
-                <CommandsLi>.help - Brings you to this menu.</CommandsLi>
-                <CommandsLi>.about - Shows details about Protip.</CommandsLi>
-                <CommandsLi>.source - View the source code.</CommandsLi>
-                <CommandsLi>.bug - Report a bug/error.</CommandsLi>
-                <CommandsLi>.suggest - Suggest a feature.</CommandsLi>
-                <CommandsLi>.invite - Invite Protip to your server.</CommandsLi>
-                <CommandsLi>.github - View Protip's github repository.</CommandsLi>
-                <CommandsLi>.website - Visit the official Protip website.</CommandsLi>
-                <CommandsLi>.set prefix - Set a new prefix for Protip.</CommandsLi>
+            {data.map((data, index) => (
+                    <CommandItem
+                      key={index}
+                      command={data.command}
+                    />
+                ))}
             </CommandsUl>
         </CommandsDivContainer>
-);
+    )
+};
 
 export default CommandsPage;
