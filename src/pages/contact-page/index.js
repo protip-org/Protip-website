@@ -4,7 +4,7 @@ import { ContactDivContainer, ContactIframe } from "./style";
 const ContactPage = () => (
     <ContactDivContainer>
         <ContactIframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfdCvjwu4bTH3vYnx6qNyxuE8NFey1_GqSVOEIwg4vevrmJ8A/viewform?embedded=true" 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSem5lNNgs6YY3tBWLDaQg9UMquSo4HeV4oxq6spq2RA-kwKqg/viewform?embedded=true" 
             width="600" 
             height="600" 
             frameborder="0" 
