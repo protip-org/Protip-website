@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CommandsDivContainer = styled.div`
     position: relative;
-    top: 50px;
+    top: 60px;
     display: flex;
     justify-content: center;
 `;
