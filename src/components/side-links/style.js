@@ -9,7 +9,9 @@ export const SideLinksDivContainer = styled.a`
     margin: 10px;
 `;
 
-export const SideLink = styled.a``;
+export const SideLink = styled.a`
+    margin: 5px;
+`;
 
 export const SideLinksImg = styled.img`
     width: 50px; 

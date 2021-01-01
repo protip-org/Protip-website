@@ -6,9 +6,9 @@ import { SideLinksDivContainer, SideLink, SideLinksImg } from "./style";
 
 const SideLinks = () => {
     const [data, setData] =  React.useState([
-        { name: "Top.gg", image: `${Top}`, link: "" },
         { name: "Discord", image: `${Discord}`, link: "https://discord.gg/8CrxvdeqDS" },
-        { name: "Github", image: `${Github}`, link: "https://github.com/IMAD200" }
+        { name: "Top.gg", image: `${Top}`, link: "" },
+        { name: "Github", image: `${Github}`, link: "https://github.com/IMAD200" },
     ]);
 
     return (
