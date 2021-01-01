@@ -1,4 +1,6 @@
 import React from "react";
+import FirstBG from "../../assests/bg/1600x793.jpg";
+import SecondBG from "../../assests/bg/1920x937.jpg";
 import { ContactDivContainer, ContactIframe } from "./style";
 
 const ContactPage = () => {
@@ -7,15 +9,14 @@ const ContactPage = () => {
         const mediaQuery = window.matchMedia('(max-width: 1600px)')
 
         if (mediaQuery.matches) {
-            document.body.style.backgroundImage = "url('https://i.imgur.com/OE6pchQ.jpg')";
+            document.body.style.backgroundImage = `url(${FirstBG})`;
           }
 
         const mediaQuery2 = window.matchMedia('(width: 1920px)')
 
           if (mediaQuery2.matches) {
-              document.body.style.backgroundImage = "url('https://i.imgur.com/IhVODPr.jpg')";
+              document.body.style.backgroundImage = `url(${SecondBG})`;
             }
-        
       }, []);
 
     return (

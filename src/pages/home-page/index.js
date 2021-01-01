@@ -1,20 +1,22 @@
 import React from "react";
+import FirstBG from "../../assests/bg/1600x793.jpg";
+import SecondBG from "../../assests/bg/1920x937.jpg";
 import { HomeDivContainer, HomeH1, HomeP, HomeButton } from "./style";
 
 const HomePage = () => {
+
     React.useEffect(() => {
-        const mediaQuery = window.matchMedia('(max-width: 1600px)')
+      const mediaQuery = window.matchMedia('(max-width: 1600px)')
 
-        if (mediaQuery.matches) {
-            document.body.style.backgroundImage = "url('https://i.imgur.com/OE6pchQ.jpg')";
-          }
+      if (mediaQuery.matches) {
+          document.body.style.backgroundImage = `url(${FirstBG})`;
+        }
 
-        const mediaQuery2 = window.matchMedia('(width: 1920px)')
+      const mediaQuery2 = window.matchMedia('(width: 1920px)')
 
-          if (mediaQuery2.matches) {
-              document.body.style.backgroundImage = "url('https://i.imgur.com/IhVODPr.jpg')";
-            }
-        
+        if (mediaQuery2.matches) {
+            document.body.style.backgroundImage = `url(${SecondBG})`;
+          }       
       }, []);
 
     return (
