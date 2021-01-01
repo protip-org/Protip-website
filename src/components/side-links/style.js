@@ -14,6 +14,7 @@ export const SideLink = styled.a``;
 export const SideLinksImg = styled.img`
     width: 50px; 
     height: 50px;
+    border: solid 2px yellow;
     border-radius: 25px;
 `;
 
