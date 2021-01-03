@@ -1,4 +1,5 @@
 import React from "react";
+import SideLinks from "../../components/side-links/index";
 import CommandItem from "../../components/command-item/index";
 import { CommandsDivContainer, CommandsUl } from "./style";
 
@@ -24,6 +25,7 @@ const CommandsPage = () => {
 
 return (
         <CommandsDivContainer>
+          <SideLinks/>
             <CommandsUl>
             {data.map((data, index) => (
                     <CommandItem

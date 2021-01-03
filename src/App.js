@@ -1,7 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/navbar/index";
-import SideLinks from "./components/side-links/index";
 import HomePage from "./pages/home-page/index";
 import CommandsPage from "./pages/commands-page/index";
 import ContactPage from "./pages/contact-page/index";
@@ -12,8 +11,7 @@ const App = () => {
   return (
     <div>
       <Navbar/>
-      <SideLinks/>
-      <Switch>
+        <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/commands" component={CommandsPage} />
         <Route path="/contact" component={ContactPage} />

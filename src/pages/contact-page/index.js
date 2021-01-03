@@ -1,4 +1,5 @@
 import React from "react";
+import SideLinks from "../../components/side-links/index";
 import FirstBG from "../../assests/bg/1600x793.jpg";
 import SecondBG from "../../assests/bg/1920x937.jpg";
 import { ContactDivContainer, ContactIframe } from "./style";
@@ -21,6 +22,7 @@ const ContactPage = () => {
 
     return (
         <ContactDivContainer>
+          <SideLinks/>
             <ContactIframe 
                 src="https://docs.google.com/forms/d/e/1FAIpQLSem5lNNgs6YY3tBWLDaQg9UMquSo4HeV4oxq6spq2RA-kwKqg/viewform?embedded=true" 
                 width="600" 
